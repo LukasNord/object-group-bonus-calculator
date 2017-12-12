@@ -59,7 +59,13 @@ function calculateEmployee( employee ){
   } // end bonus too low (no negatives)
   console.log('bonusPercentage:', bonusPercentage);
   //return an object
-
+  var objectToReturn = {
+    name: employee.name,
+    bonusPercentage: bonusPercentage,
+    totalCompensation: Number(employee.annualSalary) + Number(employee.annualSalary ) * bonusPercentage,
+    totalBonus: Number( employee.annualSalary) * bonusPercentage
+  };//end objct to return
+  return objectToReturn;
 }// end caculateEmployee
 
 calculateEmployee( scout );

@@ -59,7 +59,8 @@ function bonusPercentage(employee){
   }
 
 function totalCompensation(){
-  
+
+
 
 }
 //console.log(bonusPercentage(atticus));
